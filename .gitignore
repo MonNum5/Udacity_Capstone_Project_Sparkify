@@ -5,6 +5,8 @@ __pycache__/
 
 # C extensions
 *.so
+*_MACOSX/
+mini_sparkify_event_data.json
 
 # Distribution / packaging
 .Python
