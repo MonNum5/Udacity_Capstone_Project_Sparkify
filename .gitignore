@@ -3,10 +3,15 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Costum
+mini_sparkify_event_data.json
+__MACOSX
+spark-warehouse
+
 # C extensions
 *.so
 *_MACOSX/
-mini_sparkify_event_data.json
+
 
 # Distribution / packaging
 .Python
