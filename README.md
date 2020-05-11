@@ -78,9 +78,6 @@ weighted avg       1.00      1.00      1.00       178
 
 Classification reports validation with hold-off data (25%):
 
-### Feature Importances
-<img src="static/feature_importance.png" height='400px' width='600px'>
-
 Logistic Regression
 ```python
 precision    recall  f1-score   support
@@ -104,6 +101,9 @@ precision    recall  f1-score   support
    macro avg       1.00      1.00      1.00        47
 weighted avg       1.00      1.00      1.00        47
 ```
+
+### Feature Importances
+<img src="static/feature_importance.png" height='400px' width='600px'>
 
 # File Description
 ```
