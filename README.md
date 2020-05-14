@@ -1,10 +1,10 @@
 # Udacity Capstone Project: Sparkify
 
-This repository contains the code for the capstone project of my UdaCity Data Science course applying using the [spark](https://spark.apache.org/docs/latest/api/python/index.html) library and its python api pyspark.
+This repository contains the code for the capstone project of my Udacity Data Science course, using the [spark](https://spark.apache.org/docs/latest/api/python/index.html) library and its python api pyspark.
 
 # Project Motivation
 
-Insights about their users and estimation about their behavior is of upmost imporatance companies that rely on a interactive paltform. Based on those findings the provided content and used concept can be adjusted to garantee a good user experience, freequent and longterm interaction and therefore profit for the company. For platfroms, that use a two level subscription model with free and paid subscription the prediction about likeleyhood of the users to churn and switch from a paid to free subscription is therefore of intrest. Based on those insights individualized offers or pricing can be used influence their decission and keep their paid subscription. In this work we investigate the interaction behavior of users of the music platform "sparkify", try to find determining factors that influence their decision to cancel their paid subscription and develop a model that allows the classification of users based on those factors. For the analysis and the modelling we use spark and the python api pyspark. This library was designed to allow wrangeling and modelling of data that is considered "big data" and can not be processed with only one machine. In this notebook we demonstrate the principales, using a 128 MB subset of the 12 GB data.
+Insights about users and estimation about their behavior is of upmost importance companies that rely on a interactive platform. Based on those findings the provided content and used concept can be adjusted to guarantee a good user experience, frequent and long term interaction and therefore profit for the company. For platfroms, that use a two level subscription model with free and paid subscription the prediction about likelihood of the users to churn and switch from a paid to free subscription is therefore of great interest. Based on those insights individualized offers or pricing can be used to influence their decision and to convince them to keep their paid subscription. In this work we investigate the interaction behavior of users with the music platform "sparkify". We investigate determining factors that influence their decision to cancel their paid subscription. Based on those findings, we develop a model that allows the classification of users based on those factors. For the analysis and the modelling we use spark and the python api pyspark. This library was designed to allow data wrangling, processing and modelling of data that is considered "big data", data that can not be processed with only one machine. In this notebook we demonstrate the principles, using a 128 MB subset of the 12 GB data.
 
 # Results
 
@@ -12,16 +12,16 @@ Insights about their users and estimation about their behavior is of upmost impo
     - User attributes and information (gender)
     - Time they spend on the platform
     - Enjoyment of the content
-    - Networking over the plateform
+    - Networking over the platform
 
-- Modelling achived good classification results
-- Decission Tree is the prefered model
+- Models achieved good classification results
+- Decision Tree is the preferred model
 - The models have to be tested on a larger amount of data to verify the applicability for more users
 
 ### Data
 <img src="static/comparison_number_users_cancel_non_cancel.png" height='400px' width='600px'>
 
-Classification objective: classification of 225 unique users in canceling users (52) and non-canceling users 173) 
+Classification objective: classification of 225 unique users in canceling users (52) and non-canceling users 173). 
 
 ### Engineered Features
 Information and attributes of the user
@@ -29,17 +29,17 @@ Information and attributes of the user
 - Gender: To consider influence of gender
 
 Change of interaction behavior:
-- Trend of time spend per session: To consider long-term intrest in the platform for users with a lot of interactions
-- Trend time spend in last interaction: To consider short-term intrest in the platform e.g. users that only use the platform for 1 or two session, or a sudden                                                  decission
+- Trend of time spend per session: To consider long-term interest in the platform for users with a lot of interactions
+- Trend of time spend in last interaction: To consider short-term interest in the platform e.g. users that only use the platform for one or two session, or made a sudden decision
 
-Liked content
+Enjoyment of content
 - Radio of Thumps up to thumps down: To consider overall liking of the offered music and the mood
 - Number of Songs in Playlist: To consider if content is liked and if longer interaction is anticipated
 
 Networking
 - Number of Friends: To consider if users network over the platform
 
-Malfunctions and erros of function
+Malfunctions and errors of function
 - Number of interactions with error page: To consider effect of malfunctions of the plaform
 
 ### Classification Results
